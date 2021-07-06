@@ -18,6 +18,20 @@ app.get("/count/decrement", (req, res) => {
   res.send({ count });
 });
 
+app.get("/counter", (req, res) => {
+  res.render("counter.ejs", { count });
+});
+
+app.post("/counter/increment", (req, res) => {
+  count += 1;
+  res.render("counter.ejs", { count });
+});
+
+app.post("/counter/decrement", (req, res) => {
+  count -= 1;
+  res.render("counter.ejs", { count });
+});
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });

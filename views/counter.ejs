@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h1>カウンター</h1>
+
+    <%= count %>
+
+    <form action="/counter/increment" method="POST">
+      <button type="submit">+</button>
+    </form>
+
+    <form action="/counter/decrement" method="POST">
+      <button type="submit">-</button>
+    </form>
+  </body>
+</html>
