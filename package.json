@@ -5,6 +5,7 @@
   "author": "Hoshi Ran <ureshinostyle350@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
     "ejs": "^3.1.6",
     "express": "^4.17.1"
   }
